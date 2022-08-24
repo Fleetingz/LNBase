@@ -1,9 +1,9 @@
 //
 //  LNUtils.m
-//  SCBase
+//  LNBase
 //
-//  Created by 张强 on 2022/07/22.
-//  Copyright © 2022 全民智慧城市. All rights reserved.
+//  Created by zhangqiang on 2022/07/22.
+//  Copyright © 2022 Fleetingz. All rights reserved.
 //
 
 #import "LNUtils.h"

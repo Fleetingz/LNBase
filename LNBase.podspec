@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LNBase'
-  s.version          = '0.0.2'
+  s.version          = '0.0.3'
   s.summary          = '流年的基础框架LNBase'
 
 # This description is used to generate tags and improve search results.
@@ -39,7 +39,15 @@ Pod::Spec.new do |s|
     utils.source_files = "LNBase/Classes/LNUtils/*.{h,m}"
   end
 
-  #s.resource = "SCBaseFramework/Classes/SCBase/SCBase.framework/SCBase.bundle"
+  s.subspec 'LNBase' do |base|
+    base.source_files = "LNBase/Classes/LNBase/*.{h,m}"
+  end
+
+  s.subspec 'LNCategory' do |category|
+    category.source_files = "LNBase/Classes/LNCategory/*.{h,m}"
+  end
+
+  s.resource = "LNBase/Classes/LNBase.bundle"
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
