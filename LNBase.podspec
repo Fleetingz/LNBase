@@ -34,19 +34,6 @@ Pod::Spec.new do |s|
 
   s.source_files = "LNBase/Classes/*.{h,m}"
 
-  # 工具类
-  s.subspec 'LNUtils' do |utils|
-    utils.source_files = "LNBase/Classes/LNUtils/*.{h,m}"
-  end
-
-  s.subspec 'LNBase' do |base|
-    base.source_files = "LNBase/Classes/LNBase/*.{h,m}"
-  end
-
-  s.subspec 'LNCategory' do |category|
-    category.source_files = "LNBase/Classes/LNCategory/*.{h,m}"
-  end
-
   s.resource = "LNBase/Classes/LNBase.bundle"
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
